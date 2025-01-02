@@ -18,7 +18,7 @@ install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startswith('git+')]
 
 setup(
-    name='image-downloader',
+    name='image-downloader-ml',
     version=__version__,
     description="Image download tools used in machine learning, deep learning.",
     long_description=long_description,
@@ -44,6 +44,6 @@ setup(
     author_email='peterzh1998@gmail.com',
     entry_points={
         'console_scripts': [
-            'image-downloader = downloader.ImageDownloader:main'
+            'image-downloader-ml = downloader.ImageDownloader:main'
         ]},
 )

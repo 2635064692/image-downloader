@@ -10,7 +10,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 
 from Config import Config
 from ImageResponse import ImageResponse
-from downloader.common.ImageParseResult import ImageParseResult
+from downloader import ImageParseResult
 
 
 class WebDriverManager:

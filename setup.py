@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '1.0.2'
+__version__ = '1.0.5'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -41,6 +41,7 @@ setup(
     author='Hai Zh',
     install_requires=install_requires,
     dependency_links=dependency_links,
+    long_description_content_type='text/markdown',
     author_email='peterzh1998@gmail.com',
     entry_points={
         'console_scripts': [

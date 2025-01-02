@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -23,7 +23,7 @@ setup(
     description="Image download tools used in machine learning, deep learning.",
     long_description=long_description,
     url='https://github.com/2635064692/image-downloader',
-    download_url='https://github.com/2635064692/image-downloader/' + __version__,
+    download_url='https://github.com/2635064692/image-downloader/releases/download/' + __version__+'/image_downloader_ml-1.0.0.tar.gz',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',

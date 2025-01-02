@@ -8,7 +8,7 @@ def main():
     parser.add_argument("-dp", "--driver_path", help="Browser driver path",required=False)
     parser.add_argument("-k", "--keyword", help="Image keyword",required=True)
     parser.add_argument("-px", "--proxy", help="Request proxy",required=False)
-    parser.add_argument("-plt", "--page_load_timeout", type=int, help="Page load timeout",required=False)
+    parser.add_argument("-plt", "--page_load_timeout", type=int, help="driver#get Page load timeout",required=False)
     parser.add_argument("-l", "--limit", type=int, help="delimited list input", default=10,required=False)
     parser.add_argument("-o", "--output_directory", help="Output directory",required=False)
     parser.add_argument('-kf', '--keywords_from_file', help='extract list of keywords from a text file', type=str, required=False)

@@ -145,8 +145,8 @@ class WebDriverManager:
             for i, img in enumerate(images):
                 img_url = img.get("src")
                 if img_url and img_url not in tmp_img_urls:
-                    if img_url.startswith("/"):
-                        img_url = self.get_full_host_from_url(img_ref_url) + img_url
+                    if img_url.startswith("//"):
+                        img_url = "https:" + img_url
 
                     tmp_img_urls.add(img_url)
         except Exception as e:
@@ -159,8 +159,8 @@ class WebDriverManager:
         for tmp_url in tmp_img_urls:
             # 获取文件扩展名
             ext = os.path.splitext(tmp_url)[1].split('?')[0]
-            if ext in [".svg"]:
-                return  # SVG 不支持
+            if ext in [".svg",".gif"]:
+                continue  # SVG 不支持
             response = self.image_net_request(tmp_url)
             if response.is_save(base_width, base_height):
                 response.update_index(index, i)

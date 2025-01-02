@@ -1,7 +1,7 @@
 import argparse
 
-from Config import Config
-from ImageDownloadHelper import ImageDownloadHelper
+from downloader.Config import Config
+from downloader.ImageDownloadHelper import ImageDownloadHelper
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Image Downloader")

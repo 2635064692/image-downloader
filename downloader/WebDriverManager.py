@@ -8,10 +8,8 @@ from io import BytesIO
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.service import Service as ChromeService
 
-from Config import Config
-from ImageResponse import ImageResponse
-from downloader import ImageParseResult
-
+from downloader.Config import Config
+from downloader import ImageResponse,ImageParseResult
 
 class WebDriverManager:
     USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"

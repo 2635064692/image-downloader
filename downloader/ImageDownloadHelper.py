@@ -1,8 +1,8 @@
 from concurrent.futures import ThreadPoolExecutor
 from typing import List
 
-from WebDriverManager import WebDriverManager
-from engine.GoogleEngine import GoogleEngine
+from downloader.WebDriverManager import WebDriverManager
+from downloader.engine.GoogleEngine import GoogleEngine
 
 class ImageDownloadHelper:
     @staticmethod

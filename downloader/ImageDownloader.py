@@ -3,7 +3,7 @@ import argparse
 from downloader.Config import Config
 from downloader.ImageDownloadHelper import ImageDownloadHelper
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Image Downloader")
     parser.add_argument("-dp", "--driver_path", help="Browser driver path",required=False)
     parser.add_argument("-k", "--keyword", help="Image keyword",required=True)
@@ -26,3 +26,6 @@ if __name__ == "__main__":
 
     print("Starting image download...")
     ImageDownloadHelper.download(config)
+
+if __name__ == "__main__":
+    main()

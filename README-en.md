@@ -13,7 +13,7 @@
 - Retrieves original website links for the searched images and downloads images from the original sites.
 - Similar to the functionality of `google-images-download`, but more practical and enhanced.
 - Supports [java version](https://github.com/2635064692/Image-Downloader-java) 
-- 支持 [python version](https://github.com/2635064692/image-downloader)
+- Supports [python version](https://github.com/2635064692/image-downloader)
 ## Usage
 - Install dependencies
    ```shell

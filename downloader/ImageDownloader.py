@@ -12,6 +12,7 @@ def main():
     parser.add_argument("-l", "--limit", type=int, help="delimited list input", default=10,required=False)
     parser.add_argument("-o", "--output_directory", help="Output directory",required=False)
     parser.add_argument('-kf', '--keywords_from_file', help='extract list of keywords from a text file', type=str, required=False)
+    parser.add_argument('-e', '--search_engines', help='choose search_engines to use, default bing.com', type=str, required=False)
 
     args = parser.parse_args()
     config = Config(
@@ -21,7 +22,8 @@ def main():
         browser_driver_path=args.driver_path,
         limit=args.limit,
         output_directory=args.output_directory,
-        keywords_from_file=args.keywords_from_file
+        keywords_from_file=args.keywords_from_file,
+        search_engines=args.search_engines,
     )
 
     print("Starting image download...")

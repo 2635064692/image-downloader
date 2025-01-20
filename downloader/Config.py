@@ -3,7 +3,7 @@ import copy
 
 class Config:
     def __init__(self, proxy=None, keyword=None, page_load_timeout=None, browser_driver_path=None, limit=10,
-                 output_directory=None, keywords_from_file=None):
+                 output_directory=None, keywords_from_file=None,search_engines = "bing"):
         self.proxy = proxy
         self.keyword = keyword
         self.page_load_timeout = page_load_timeout
@@ -11,6 +11,7 @@ class Config:
         self.limit = limit
         self.output_directory = output_directory
         self.keywords_from_file = keywords_from_file
+        self.search_engines = search_engines
 
         self.sub_folder = "default"
 

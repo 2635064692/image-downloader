@@ -27,8 +27,8 @@
 ## Support Plan
 
 - [ √ ] Google Image Search
-- [ ] Bing Image Search
-- [ ] Baidu Image Search
+- [ √ ] Bing Image Search
+- [ √ ] Baidu Image Search
 
 
 ## Disclaimer

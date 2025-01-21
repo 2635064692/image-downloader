@@ -36,7 +36,7 @@ class Config:
         if self.keywords_from_file is None:
             return [self]
         results = []
-        with open('sample_config.json', 'r',encoding='utf-8') as file:
+        with open(self.keywords_from_file, 'r',encoding='utf-8') as file:
             data = json.load(file)
         for item in data:
             # 深拷贝

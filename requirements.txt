@@ -1,2 +1,7 @@
-selenium
+selenium~=4.24.0
 webdriver_manager
+
+setuptools~=75.1.0
+requests~=2.32.3
+pillow~=11.0.0
+beautifulsoup4~=4.12.3
